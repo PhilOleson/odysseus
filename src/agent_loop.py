@@ -621,7 +621,7 @@ _API_HOSTS = frozenset([
     # Without these, `_is_api_model` falls back to keyword sniffing on the
     # model name, so well-behaved local servers don't get native tool
     # schemas and the agent silently degrades to fenced-block parsing.
-    "localhost", "127.0.0.1", "host.docker.internal",
+    "localhost", "127.0.0.1", "host.docker.internal", "192.168.1.69",
 ])
 _MCP_KEYWORDS = frozenset(["mcp", "browse", "browser", "website", "calendar", "event", "email",
                            "gmail", "screenshot", "navigate", "click", "miniflux", "rss", "feed"])
